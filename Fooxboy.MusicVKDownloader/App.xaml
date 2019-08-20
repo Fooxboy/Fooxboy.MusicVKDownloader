@@ -1,0 +1,12 @@
+﻿<Application
+    x:Class="Fooxboy.MusicVKDownloader.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Fooxboy.MusicVKDownloader"
+    xmlns:viewModels="using:Fooxboy.MusicVKDownloader.ViewModels">
+
+    <Application.Resources>
+        <vm:ViewModelLocator xmlns:vm="using:Fooxboy.MusicVKDownloader.ViewModels" x:Key="Locator" />
+    </Application.Resources>
+
+</Application>
