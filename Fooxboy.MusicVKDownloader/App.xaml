@@ -2,12 +2,15 @@
     x:Class="Fooxboy.MusicVKDownloader.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converters="using:Fooxboy.MusicVKDownloader.Converters"
     xmlns:local="using:Fooxboy.MusicVKDownloader"
     xmlns:viewModels="using:Fooxboy.MusicVKDownloader.ViewModels">
 
     <Application.Resources>
         <ResourceDictionary>
             <vm:ViewModelLocator xmlns:vm="using:Fooxboy.MusicVKDownloader.ViewModels" x:Key="Locator" />
+
+            <converters:BoolInversionConverter x:Key="BoolInversionConverter" />
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Themes/Light.xaml" />
                 <ResourceDictionary Source="/Themes/Dark.xaml" />

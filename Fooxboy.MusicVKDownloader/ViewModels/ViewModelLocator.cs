@@ -30,20 +30,18 @@ namespace Fooxboy.MusicVKDownloader.ViewModels
             //Register your services used here
             SimpleIoc.Default.Register<INavigationService, NavigationService>();
             SimpleIoc.Default.Register<HelloWorldViewModel>();
+            SimpleIoc.Default.Register<LoginViewModel>();
 
         }
 
-        public HelloWorldViewModel StartPageInstance
-        {
-            get => ServiceLocator.Current.GetInstance<HelloWorldViewModel>();
-        }
+        public HelloWorldViewModel StartPageInstance => ServiceLocator.Current.GetInstance<HelloWorldViewModel>();
 
-        // <summary>
-        // The cleanup.
-        // </summary>
+        public LoginViewModel LoginViewModel => ServiceLocator.Current.GetInstance<LoginViewModel>();
+
+
         public static void Cleanup()
         {
-            // TODO Clear the ViewModels
+            // TODO Очищаем вью модели
         }
     }
 }

@@ -119,6 +119,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Converters\BoolInversionConverter.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -127,6 +128,7 @@
       <DependentUpon>Shell.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\HelloWorldViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\ViewModelLocator.cs" />
     <Compile Include="Views\HelloWorldPage.xaml.cs">
       <DependentUpon>HelloWorldPage.xaml</DependentUpon>
@@ -190,7 +192,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <PRIResource Include="Strings\ru-RU\Localization.resw" />
