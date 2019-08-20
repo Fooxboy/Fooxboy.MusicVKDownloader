@@ -6,7 +6,13 @@
     xmlns:viewModels="using:Fooxboy.MusicVKDownloader.ViewModels">
 
     <Application.Resources>
-        <vm:ViewModelLocator xmlns:vm="using:Fooxboy.MusicVKDownloader.ViewModels" x:Key="Locator" />
+        <ResourceDictionary>
+            <vm:ViewModelLocator xmlns:vm="using:Fooxboy.MusicVKDownloader.ViewModels" x:Key="Locator" />
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Themes/Light.xaml" />
+                <ResourceDictionary Source="/Themes/Dark.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 
 </Application>
