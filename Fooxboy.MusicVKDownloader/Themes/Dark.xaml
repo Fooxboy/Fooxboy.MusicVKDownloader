@@ -4,6 +4,8 @@
     xmlns:local="using:Fooxboy.MusicVKDownloader.Themes">
 
     <ResourceDictionary.ThemeDictionaries>
-        <ResourceDictionary x:Key="Dark" />
+        <ResourceDictionary x:Key="Dark" >
+            <SolidColorBrush x:Key="BackgroundApp" Color="#191919" />
+        </ResourceDictionary>
     </ResourceDictionary.ThemeDictionaries>
 </ResourceDictionary>
