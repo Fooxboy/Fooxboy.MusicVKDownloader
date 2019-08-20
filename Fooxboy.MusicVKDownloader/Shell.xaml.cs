@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Fooxboy.MusicVKDownloader.Services;
+using GalaSoft.MvvmLight.Ioc;
 
 // Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,6 +27,13 @@ namespace Fooxboy.MusicVKDownloader
         public Shell()
         {
             this.InitializeComponent();
+        }
+
+
+        private void RegisterIoc()
+        {
+            SimpleIoc.Default.Register<LoginService>();
+            SimpleIoc.Default.Register<TokenService>();
         }
     }
 }
