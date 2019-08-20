@@ -10,12 +10,12 @@ namespace Fooxboy.MusicVKDownloader.Services
     {
         public async Task Auth(string login, string password)
         {
-
+            var token = await Fooxboy.MusicX.Core.VKontakte.Auth.User(login, password, null, null);
         }
 
         public async Task AutoAuth(string accessToken)
         {
-
+            await Fooxboy.MusicX.Core.VKontakte.Auth.Auto(accessToken, null);
         }
     }
 }
