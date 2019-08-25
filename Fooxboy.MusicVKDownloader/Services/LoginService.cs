@@ -6,16 +6,30 @@ using System.Threading.Tasks;
 
 namespace Fooxboy.MusicVKDownloader.Services
 {
+    /// <summary>
+    /// Сервис для входа в аккаунт ВКонтакте
+    /// </summary>
     public class LoginService
     {
+        /// <summary>
+        /// Первая авторизация по логину и паролю
+        /// </summary>
+        /// <param name="login">Номер телефона или адрес электронной почты</param>
+        /// <param name="password">Пароль</param>
+        /// <returns></returns>
         public async Task Auth(string login, string password)
         {
-            var token = await Fooxboy.MusicX.Core.VKontakte.Auth.User(login, password, null, null);
+            
         }
 
+        /// <summary>
+        /// Автоматическая авторизация при запуске приложения, если пользователь уже вошел в аккаунт.
+        /// </summary>
+        /// <param name="accessToken">Ключ доступа</param>
+        /// <returns></returns>
         public async Task AutoAuth(string accessToken)
         {
-            await Fooxboy.MusicX.Core.VKontakte.Auth.Auto(accessToken, null);
+            
         }
     }
 }
