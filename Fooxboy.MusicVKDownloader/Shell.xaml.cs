@@ -32,8 +32,9 @@ namespace Fooxboy.MusicVKDownloader
 
         private void RegisterIoc()
         {
-            SimpleIoc.Default.Register<LoginService>();
+            SimpleIoc.Default.Register<VKontakteService>();
             SimpleIoc.Default.Register<TokenService>();
+            SimpleIoc.Default.Register<LoginService>();
         }
     }
 }

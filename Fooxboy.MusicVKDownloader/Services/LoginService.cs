@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight.Ioc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,8 @@ namespace Fooxboy.MusicVKDownloader.Services
     /// </summary>
     public class LoginService
     {
+        private VKontakteService vkService;
+        private TokenService tokenService;
         /// <summary>
         /// Первая авторизация по логину и паролю
         /// </summary>
@@ -19,7 +22,14 @@ namespace Fooxboy.MusicVKDownloader.Services
         /// <returns></returns>
         public async Task Auth(string login, string password)
         {
-            
+            var token = await vkService.AuthLogin(login, password);
+            await tokenService.SetCurrentToken(token);
+        }
+
+        public LoginService()
+        {
+            vkService = SimpleIoc.Default.GetInstance<VKontakteService>();
+            tokenService = SimpleIoc.Default.GetInstance<TokenService>();
         }
 
         /// <summary>
@@ -29,7 +39,7 @@ namespace Fooxboy.MusicVKDownloader.Services
         /// <returns></returns>
         public async Task AutoAuth(string accessToken)
         {
-            
+            await vkService.AuthToken(accessToken);
         }
     }
 }
