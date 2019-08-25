@@ -4,8 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Fooxboy.MusicVKDownloader.Services;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Ioc;
 
 namespace Fooxboy.MusicVKDownloader.ViewModels
 {
@@ -52,11 +54,49 @@ namespace Fooxboy.MusicVKDownloader.ViewModels
 
         public ICommand LoginCommand { get; private set; }
 
+        private LoginService loginService;
         public LoginViewModel()
         {
-            LoginCommand = new RelayCommand(() =>
+            loginService = SimpleIoc.Default.GetInstance<LoginService>();
+            LoginCommand = new RelayCommand(async() =>
             {
-                //TODO: вход в аккаунт
+                IsLoading = true;
+                if(Login == "" || Password == "")
+                {
+                    //TODO: Неверный логин или пароль.
+                    return;
+                }
+
+                try
+                {
+                    await loginService.Auth(Login, Password);
+                }
+                catch (VkNet.Exception.UserAuthorizationFailException)
+                {
+                   
+                }
+                catch (VkNet.Exception.VkAuthorizationException)
+                {
+                    
+                }
+                catch (VkNet.Exception.VkApiAuthorizationException)
+                {
+                   
+                }
+                catch (VkNet.Exception.UserDeletedOrBannedException)
+                {
+                   
+                }catch(VkNet.Exception.AccessTokenInvalidException)
+                {
+
+                }catch(VkNet.Exception.NeedValidationException e)
+                {
+
+                }catch(Exception e)
+                {
+
+                }
+
             });
         }
     }
