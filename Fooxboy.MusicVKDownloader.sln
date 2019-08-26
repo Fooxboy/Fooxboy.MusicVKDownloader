@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29201.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fooxboy.MusicVKDownloader", "Fooxboy.MusicVKDownloader\Fooxboy.MusicVKDownloader.csproj", "{0FE2DA69-3B26-4ED4-9310-248C96D5D9A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fooxboy.MusicVKDownloader.Tests", "Fooxboy.MusicVKDownloader.Tests\Fooxboy.MusicVKDownloader.Tests.csproj", "{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,32 @@ Global
 		{0FE2DA69-3B26-4ED4-9310-248C96D5D9A7}.Release|x86.ActiveCfg = Release|x86
 		{0FE2DA69-3B26-4ED4-9310-248C96D5D9A7}.Release|x86.Build.0 = Release|x86
 		{0FE2DA69-3B26-4ED4-9310-248C96D5D9A7}.Release|x86.Deploy.0 = Release|x86
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Debug|ARM.ActiveCfg = Debug|ARM
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Debug|ARM.Build.0 = Debug|ARM
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Debug|ARM.Deploy.0 = Debug|ARM
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Debug|ARM64.Build.0 = Debug|ARM64
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Debug|x64.ActiveCfg = Debug|x64
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Debug|x64.Build.0 = Debug|x64
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Debug|x64.Deploy.0 = Debug|x64
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Debug|x86.ActiveCfg = Debug|x86
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Debug|x86.Build.0 = Debug|x86
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Debug|x86.Deploy.0 = Debug|x86
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Release|Any CPU.ActiveCfg = Release|x86
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Release|ARM.ActiveCfg = Release|ARM
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Release|ARM.Build.0 = Release|ARM
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Release|ARM.Deploy.0 = Release|ARM
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Release|ARM64.ActiveCfg = Release|ARM64
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Release|ARM64.Build.0 = Release|ARM64
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Release|ARM64.Deploy.0 = Release|ARM64
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Release|x64.ActiveCfg = Release|x64
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Release|x64.Build.0 = Release|x64
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Release|x64.Deploy.0 = Release|x64
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Release|x86.ActiveCfg = Release|x86
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Release|x86.Build.0 = Release|x86
+		{C07123A4-F849-4C2A-A5D4-E3AB38C9171C}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
